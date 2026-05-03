@@ -16,12 +16,13 @@ object RetrofitClient {
         .addInterceptor(logging)
         .build()
 
-    val instance: WineApiService by lazy {
+    // CAMBIO AQUÍ: Debe decir FuturamaApiService en lugar de FuturamaInfo
+    val instance: FuturamaApiService by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(WineApiService::class.java)
+            .create(FuturamaApiService::class.java)
     }
 }

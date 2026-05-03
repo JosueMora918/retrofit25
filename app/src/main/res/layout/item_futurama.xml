@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título: Años de Emisión -->
+        <TextView
+            android:id="@+id/txtYears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Años en emisión"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Descripción: Sinopsis (Párrafo largo) -->
+        <TextView
+            android:id="@+id/txtSynopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí irá la sinopsis de Futurama..."
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:lineSpacingExtra="4dp"
+            android:justificationMode="inter_word" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
